@@ -103,10 +103,12 @@
 }
 .show {
   display: block;
+  position: fixed;
   width: 100% !important;
   height: 100vh !important;
   background-color: #fff;
   padding-top: 30px;
+  z-index: 1001;
   ul {
     display: flex;
     flex-direction: column;

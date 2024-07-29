@@ -3,7 +3,7 @@ import check from "@/images/check.svg";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 const TailandDastur = () => {
-  const t = useTranslations("t");
+  const t = useTranslations("Tailand");
   return (
     <section className="container tailand__dastur">
       <div className="card">
@@ -63,13 +63,9 @@ const TailandDastur = () => {
         </ul>
       </div>
       <div className="card">
-        <h3>{t("title20")}</h3>
-        <h2>{t("title21")}</h2>
+        <h3>{t("title21")}</h3>
+        <h2>{t("title22")}</h2>
         <ul>
-          <li>
-            <Image src={check} alt="check" priority />
-            {t("title22")}
-          </li>
           <li>
             <Image src={check} alt="check" priority />
             {t("title23")}
@@ -85,7 +81,7 @@ const TailandDastur = () => {
           <li>
             <Image src={check} alt="check" priority />
             {t("title26")}
-          </li>{" "}
+          </li>
           <li>
             <Image src={check} alt="check" priority />
             {t("title27")}
@@ -93,17 +89,17 @@ const TailandDastur = () => {
           <li>
             <Image src={check} alt="check" priority />
             {t("title28")}
+          </li>{" "}
+          <li>
+            <Image src={check} alt="check" priority />
+            {t("title29")}
           </li>
         </ul>
       </div>
       <div className="card">
-        <h3>{t("title29")}</h3>
-        <h2>{t("title30")}</h2>
+        <h3>{t("title30")}</h3>
+        <h2>{t("title31")}</h2>
         <ul>
-          <li>
-            <Image src={check} alt="check" priority />
-            {t("title31")}
-          </li>
           <li>
             <Image src={check} alt="check" priority />
             {t("title32")}
@@ -127,11 +123,11 @@ const TailandDastur = () => {
           <li>
             <Image src={check} alt="check" priority />
             {t("title37")}
-          </li>{" "}
+          </li>
           <li>
             <Image src={check} alt="check" priority />
             {t("title38")}
-          </li>
+          </li>{" "}
         </ul>
       </div>
     </section>

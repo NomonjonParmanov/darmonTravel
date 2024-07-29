@@ -236,6 +236,9 @@
     "title38": "Bo'sh vaqt."
   },
   "Button": {
-    "button": "Buyurtma berish"
+    "button": "Buyurtma berish",
+    "title2":"Iltimos, operatorlarimiz siz bilan bog'lanishiuchun aloqa ma'lumotlaringizni qoldiring.",
+    "title3":" Ma’lumotlarni to’ldirib “Buyurtma berish” tugmasini bosish orqali ma’lumotlar yuboriladi va operator siz bilan tez orqada bog’lanadi.",
+    "name":"Sizning ismingiz"
   }
 }

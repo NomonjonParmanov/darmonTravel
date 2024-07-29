@@ -2,14 +2,15 @@
 import { PatternFormat } from "react-number-format";
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
+import { useTranslations } from "next-intl";
 
 const Button: React.FC = () => {
   const [modal, setModal] = useState(false);
-
+  const t = useTranslations("Button");
   return (
     <section className="container button">
       <button onClick={() => setModal(!modal)} className="btn1">
-        Buyurtma Berish
+        {t("button")}{" "}
       </button>
       <div className={`${modal ? "modal" : "none"}`}>
         <div className="modal__content">
@@ -19,25 +20,18 @@ const Button: React.FC = () => {
             </button>
           </div>
           <div className="middle">
-            <p>
-              Iltimos, operatorlarimiz siz bilan bog'lanishi uchun aloqa
-              ma'lumotlaringizni qoldiring.
-            </p>
+            <p>{t("title2")}</p>
             <form action="">
-              <input type="text" placeholder="Sizning ismingiz" required />
+              <input type="text" placeholder={`${t("name")}`} required />
               <PatternFormat
                 format="+998 (##) ### ## ##"
                 allowEmptyFormatting
                 mask="_"
                 required
               />
-              <button className="btn1 btn">Buyurtma Berish</button>
+              <button className="btn1 btn"> {t("button")} </button>
             </form>
-            <p className="p">
-              Ma’lumotlarni to’ldirib “Buyurtma berish” tugmasini bosish orqali
-              ma’lumotlar yuboriladi va operator siz bilan tez orqada
-              bog’lanadi.
-            </p>
+            <p className="p">{t("title3")}</p>
           </div>
         </div>
       </div>

@@ -45,6 +45,7 @@
 
 .tailand__dastur {
   display: grid;
+  align-items: center;
   gap: 30px;
   grid-template-columns: repeat(2, 1fr);
   place-items: center;

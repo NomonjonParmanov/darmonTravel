@@ -1,3 +1,4 @@
+"use client";
 import Button from "@/components/button/Button";
 import YevropaDastur from "@/components/yevropa/YevropaDastur";
 import YevropaHeader from "@/components/yevropa/YevropaHeader";

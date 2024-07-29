@@ -1,3 +1,4 @@
+"use client";
 import Button from "@/components/button/Button";
 import MIsrDastur from "@/components/misr/MIsrDastur";
 import MisrHeader from "@/components/misr/MisrHeader";

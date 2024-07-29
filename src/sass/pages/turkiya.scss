@@ -60,6 +60,7 @@
   display: flex;
   gap: 30px;
   justify-content: center;
+  align-items: center;
   padding-top: 100px !important;
   .card {
     width: 446px;
@@ -194,8 +195,9 @@
   p {
     font-size: 25px;
     font-weight: 400;
-    line-height: 34.5px;
+    line-height: 40.5px;
     color: #004290;
+    padding-top: 10px;
   }
 }
 

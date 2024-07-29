@@ -23,20 +23,20 @@ const Navbar: React.FC = () => {
   return (
     <>
       <nav className="container navbar">
-        <Link href="/baa" className="logo">
+        <Link href="/" className="logo">
           <Image src={logo} alt="logo" priority />
         </Link>
         <ul>
-          <Link href={"#tur"}>
+          <Link href={"/#tur"}>
             <li>{t("title1")}</li>
           </Link>
-          <Link href={"#about"}>
+          <Link href={"/#about"}>
             <li>{t("title2")}</li>
           </Link>
-          <Link href={"#service"}>
+          <Link href={"/#service"}>
             <li>{t("title3")}</li>
           </Link>
-          <Link href={"#contact"}>
+          <Link href={"/#contact"}>
             <li>{t("title4")}</li>
           </Link>
         </ul>
@@ -67,17 +67,17 @@ const Navbar: React.FC = () => {
       </nav>
       <div className={`${toggle ? "show" : "none"}`}>
         <ul>
-          <Link href={"#tur"}>
-            <li>{t("title1")}</li>
+          <Link href={"/#tur"}>
+            <li onClick={() => setToggle(!toggle)}>{t("title1")}</li>
           </Link>
-          <Link href={"#about"}>
-            <li>{t("title2")}</li>
+          <Link href={"/#about"}>
+            <li onClick={() => setToggle(!toggle)}>{t("title2")}</li>
           </Link>
-          <Link href={"#service"}>
-            <li>{t("title3")}</li>
+          <Link href={"/#service"}>
+            <li onClick={() => setToggle(!toggle)}>{t("title3")}</li>
           </Link>
-          <Link href={"#contact"}>
-            <li>{t("title4")}</li>
+          <Link href={"/#contact"}>
+            <li onClick={() => setToggle(!toggle)}>{t("title4")}</li>
           </Link>
         </ul>
       </div>

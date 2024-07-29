@@ -247,6 +247,9 @@
     "title36": "Free time."
   },
   "Button": {
-    "title": "Order a tour"
+    "title": "Order a tour",
+    "title2": "Please leave your contact information so our operators can get in touch with you.",
+"title3": "Fill out the information and click the 'Place Order' button to submit the details, and an operator will get in touch with you shortly.",
+"name":"Your name"
   }
 }
