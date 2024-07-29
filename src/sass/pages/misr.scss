@@ -1,0 +1,165 @@
+.misrI {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.misr__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px !important;
+  h2 {
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 34.34px;
+    color: #004290;
+  }
+  p {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 34.5px;
+    color: #004290;
+    width: 904px;
+    padding-top: 10px;
+  }
+  .header__image {
+    height: 350px;
+    img {
+      width: 100%;
+      object-fit: contain;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .misr__header {
+    flex-direction: column;
+    p {
+      width: 100%;
+    }
+    .header__image {
+      padding-top: 40px !important;
+    }
+  }
+}
+
+.misr__dastur {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 100px !important;
+  .card {
+    width: 402px;
+    min-height: 407px;
+    padding: 20px;
+    background: #f1f3ff;
+    border-radius: 29px;
+    h3 {
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 38.16px;
+      color: #004290;
+    }
+    h2 {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 38.16px;
+      color: #004290;
+      padding-top: 5px;
+      border-bottom: 1px solid #00429080;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      padding-top: 10px;
+      li {
+        font-size: 16x;
+        font-weight: 400;
+        line-height: 37.5px;
+        color: #004290;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-top: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .misr__dastur {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    .card {
+      width: 90%;
+      h3 {
+        font-size: 23px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      ul {
+        li {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .misr__dastur {
+    .card {
+      h3 {
+        font-size: 20px;
+      }
+      h2 {
+        font-size: 18px;
+      }
+      ul {
+        li {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .misr__dastur {
+    grid-template-columns: auto;
+    .card {
+      width: 80%;
+    }
+  }
+}
+@media (max-width: 510px) {
+  .misr__dastur {
+    .card {
+      width: 84%;
+      text-align: center;
+      ul {
+        li {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 415px) {
+  .misr__dastur {
+    flex-direction: column;
+    align-items: center;
+    .card {
+      width: 90%;
+      text-align: center;
+      ul {
+        li {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

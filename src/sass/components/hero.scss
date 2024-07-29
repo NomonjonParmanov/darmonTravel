@@ -1,0 +1,119 @@
+.hero {
+  padding-top: 60px !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .hero__text {
+    display: flex;
+    flex-direction: column;
+    h1 {
+      color: rgb(0, 66, 144);
+      font-size: 100px;
+      font-weight: 700;
+      line-height: 104.3%;
+      text-transform: uppercase;
+      width: 769px;
+      padding-bottom: 20px;
+      text-align: center;
+    }
+
+    a {
+      margin: 0 auto;
+      button {
+        border-radius: 10px;
+        width: 507px;
+        height: 91px;
+        font-size: 33px;
+        color: white;
+        box-shadow: 0px 9px 7.1px 0px rgba(33, 33, 33, 0.08),
+          0px 10px 35px 0px rgba(35, 175, 95, 0.25);
+        background: rgb(35, 175, 95);
+        border: none;
+        transition: 1s;
+      }
+    }
+  }
+  .hero__image {
+    background-image: url("../../images/heroBg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 200px;
+    img {
+      width: 684.54px;
+      height: 583.38px;
+      object-fit: contain;
+    }
+  }
+}
+
+@media (max-width: 1281px) {
+  .hero {
+    flex-direction: column;
+    .hero__text {
+      h1 {
+        font-size: 40px;
+        width: 100%;
+        padding-bottom: 40px;
+      }
+    }
+    .hero__image {
+      margin: 0;
+      flex-grow: 10;
+      margin-top: 50px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    .hero__text {
+      h1 {
+        font-size: 20px;
+      }
+      a {
+        button {
+          width: 100%;
+        }
+      }
+    }
+    .hero__image {
+      img {
+        height: 300px;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .hero {
+    .hero__text {
+      h1 {
+        font-size: 30px;
+      }
+      a {
+        button {
+          width: 100%;
+          height: 40px !important;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  .hero {
+    .hero__text {
+      h1 {
+        font-size: 30px;
+      }
+      a {
+        button {
+          width: 200px;
+        }
+      }
+    }
+  }
+}

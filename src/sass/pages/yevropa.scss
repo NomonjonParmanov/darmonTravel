@@ -1,0 +1,169 @@
+.yevropaI {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.yevropa__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px !important;
+  .header__text {
+    h2 {
+      font-size: 27px;
+      font-weight: 700;
+      line-height: 34.34px;
+      color: #004290;
+    }
+    p {
+      font-size: 23px;
+      font-weight: 400;
+      line-height: 34.5px;
+      color: #004290;
+      padding-bottom: 10px;
+      width: 904px;
+    }
+  }
+  .header__image {
+    height: 350px;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .yevropa__header {
+    flex-direction: column;
+    .header__text {
+      p {
+        width: 100%;
+      }
+    }
+    .header__image {
+      padding-top: 40px !important;
+    }
+  }
+}
+
+.yevropa__dastur {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 100px !important;
+  .card {
+    width: 402px;
+    min-height: 407px;
+    padding: 20px;
+    background: #f1f3ff;
+    border-radius: 29px;
+    h3 {
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 38.16px;
+      color: #004290;
+    }
+    h2 {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 38.16px;
+      color: #004290;
+      padding-top: 5px;
+      border-bottom: 1px solid #00429080;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      padding-top: 10px;
+      li {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 37.5px;
+        color: #004290;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-top: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .yevropa__dastur {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    .card {
+      width: 90%;
+      h3 {
+        font-size: 23px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      ul {
+        li {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .yevropa__dastur {
+    .card {
+      h3 {
+        font-size: 20px;
+      }
+      h2 {
+        font-size: 18px;
+      }
+      ul {
+        li {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 670px) {
+  .yevropa__dastur {
+    grid-template-columns: auto;
+    .card {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 510px) {
+  .yevropa__dastur {
+    padding-top: 30px !important;
+    .card {
+      width: 90%;
+      text-align: center;
+      ul {
+        li {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 415px) {
+  .yevropa__dastur {
+    flex-direction: column;
+    .card {
+      width: 95%;
+      ul {
+        li {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,129 @@
+.button {
+  .btn1 {
+    display: block;
+    margin: 30px auto;
+    box-shadow: 0px 9px 7.1px 0px #21212114;
+    box-shadow: 0px 10px 35px 0px #23af5f40;
+    width: 347px;
+    height: 61px;
+    background: #23af5f;
+    color: #fff;
+    font-size: 23px;
+    transition: 0.4s;
+    &:hover {
+      padding: 5px;
+      background-color: #fff;
+      color: #000;
+      border: 1px solid #ccc;
+    }
+  }
+  .none {
+    display: none;
+  }
+  .modal {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    .modal__content {
+      position: absolute;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 430px;
+      background: rgb(255, 255, 255);
+      height: auto;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      .close {
+        text-align: end;
+        button {
+          background-color: transparent;
+          font-size: 25px;
+          color: red;
+        }
+      }
+      .middle {
+        p {
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 35.62px;
+          text-align: center;
+          color: #004290;
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-top: 10px;
+          input {
+            border: 1px solid #504f4f;
+            border-radius: 10px;
+            width: 300px;
+            height: 40px;
+            padding-left: 10px;
+            background-color: transparent;
+            margin-top: 10px;
+          }
+          .btn {
+            width: 310px;
+            border-radius: 10px;
+            font-size: 20px;
+            height: 40px;
+            margin-top: 10px;
+          }
+        }
+        .p {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 22.9px;
+          text-align: center;
+          color: #00000057;
+          width: 400px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .button {
+    .modal {
+      .modal__content {
+        width: 90%;
+        .middle {
+          p {
+            width: 100%;
+            font-size: 16px;
+          }
+          form {
+            input {
+              width: 100%;
+            }
+            .btn {
+              width: 100%;
+            }
+          }
+          .p {
+            font-size: 16px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 430px) {
+  .button {
+    .modal {
+      .modal__content {
+        width: 85%;
+      }
+    }
+  }
+}

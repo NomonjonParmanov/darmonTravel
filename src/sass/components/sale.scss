@@ -1,0 +1,113 @@
+.sale {
+  margin-top: 100px !important;
+  border-radius: 25px;
+  width: 1400px;
+  background: rgb(0, 66, 144);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 180px;
+  .sale__text {
+    h2 {
+      font-size: 25px;
+      font-weight: 500;
+      line-height: 124.5%;
+      color: #fff;
+      padding-top: 20px;
+      span {
+        color: rgb(84, 255, 234);
+        font-size: 30px;
+      }
+    }
+    p {
+      padding-top: 20px;
+      color: rgb(84, 255, 234);
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 124.5%;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      span {
+        color: #fff;
+        font-size: 20px;
+      }
+    }
+  }
+  .sale__image {
+    display: flex;
+    align-items: center;
+    .ticket {
+      margin-right: -100px;
+    }
+    img {
+      border-radius: 0px 25px 0px 25px;
+      width: 200px;
+      height: 172px;
+      object-fit: contain;
+    }
+  }
+}
+
+@media (max-width: 1281px) {
+  .sale {
+    margin-top: 30px !important;
+    flex-direction: column;
+    align-items: center;
+    height: 330px;
+    width: 90%;
+    .sale__text {
+      width: 100%;
+      text-align: center;
+      h2 {
+        text-align: center;
+      }
+      p {
+        justify-content: center;
+      }
+    }
+    .sale__image {
+      justify-content: center;
+      gap: 20px;
+      .ticket {
+        width: 100%;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .sale {
+    margin-top: 30px !important;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+    padding-bottom: 20px !important;
+    width: 90%;
+    .sale__text {
+      width: 100%;
+      text-align: center;
+      h2 {
+        text-align: center;
+      }
+      p {
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+      }
+    }
+    .sale__image {
+      margin-left: -10px;
+      gap: 10px;
+      .ticket {
+        display: none;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

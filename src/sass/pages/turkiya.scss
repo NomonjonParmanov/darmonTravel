@@ -1,0 +1,211 @@
+.turkiyaI {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.turkiya__header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px !important;
+  .header__text {
+    h1 {
+      font-size: 27px;
+      font-weight: 700;
+      line-height: 34.34px;
+      color: #004290;
+    }
+    h3 {
+      font-size: 20px;
+      color: #004290;
+    }
+    p {
+      font-size: 22px;
+      width: 862px;
+      padding-top: 10px;
+      color: #004290;
+    }
+  }
+  .header__image {
+    height: 350px;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+}
+@media (max-width: 1225px) {
+  .turkiya__header,
+  .antaliya__header {
+    flex-direction: column;
+    .header__text {
+      p {
+        width: 100%;
+      }
+      padding-bottom: 50px;
+    }
+  }
+}
+@media (max-width: 515px) {
+  .turkiya__header {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+.istanbul__dastur,
+.antaliya__cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding-top: 100px !important;
+  .card {
+    width: 446px;
+    min-height: 407px;
+    padding: 20px;
+    background: #f1f3ff;
+    border-radius: 29px;
+
+    h3 {
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 38.16px;
+      color: #004290;
+    }
+    h2 {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 38.16px;
+      color: #004290;
+      padding-top: 5px;
+      border-bottom: 1px solid #00429080;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      padding-top: 10px;
+      li {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 37.5px;
+        color: #004290;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-top: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .istanbul__dastur,
+  .antaliya__cards {
+    .card {
+      h3 {
+        font-size: 23px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      ul {
+        li {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .istanbul__dastur,
+  .antaliya__cards {
+    .card {
+      h3 {
+        font-size: 20px;
+      }
+      h2 {
+        font-size: 18px;
+      }
+      ul {
+        li {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .istanbul__dastur,
+  .antaliya__cards {
+    flex-direction: column;
+    align-items: center;
+    .card {
+      width: 60%;
+      text-align: center;
+    }
+  }
+}
+@media (max-width: 510px) {
+  .istanbul__dastur,
+  .antaliya__cards {
+    .card {
+      width: 84%;
+      ul {
+        li {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 415px) {
+  .istanbul__dastur,
+  .antaliya__cards {
+    .card {
+      width: 90%;
+    }
+  }
+}
+
+.antaliya__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 100px !important;
+  gap: 30px;
+  .header__image {
+    img {
+      width: 646px;
+      height: 475px;
+      object-fit: contain;
+    }
+  }
+  h2 {
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 34.34px;
+    color: #004290;
+    padding-top: 20px;
+  }
+  p {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 34.5px;
+    color: #004290;
+  }
+}
+
+@media (max-width: 680px) {
+  .antaliya__header {
+    .header__image {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
