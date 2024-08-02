@@ -21,7 +21,6 @@ const Navbar: React.FC = () => {
   const changeLocale = (newLocale: string) => {
     router.push(`/${city ? `${newLocale}/${city}` : newLocale}`);
   };
-
   const localeLang = useLocale();
   return (
     <div className="n__bg">

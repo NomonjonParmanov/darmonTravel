@@ -12,7 +12,6 @@ import { useLocale, useTranslations } from "next-intl";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
-
 const IMGS = [
   {
     id: 1,
@@ -85,7 +84,6 @@ const IMGS = [
     img: tailand,
   },
 ];
-
 const Carousel: React.FC = () => {
   const t = useTranslations("Carousel");
   const sliderRef = useRef<Slider>(null);
@@ -156,5 +154,4 @@ const Carousel: React.FC = () => {
     </section>
   );
 };
-
 export default Carousel;
