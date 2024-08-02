@@ -2,16 +2,16 @@
 import Image from "next/image";
 import React, { useRef, useState, useEffect } from "react";
 import Slider from "react-slick";
-import { FaArrowRightLong, FaArrowLeftLong } from "react-icons/fa6";
+import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 import turkiya from "@/images/card1.png";
 import misr from "@/images/card2.png";
 import baa from "@/images/card3.png";
 import yevropa from "@/images/card4.png";
-import { useTranslations } from "next-intl";
 import tailand from "@/images/tailandC.jpg";
+import { useLocale, useTranslations } from "next-intl";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Link } from "@/navigation";
+import Link from "next/link";
 
 const IMGS = [
   {
@@ -90,7 +90,7 @@ const Carousel: React.FC = () => {
   const t = useTranslations("Carousel");
   const sliderRef = useRef<Slider>(null);
   const [isMounted, setIsMounted] = useState(false);
-
+  const locale = useLocale();
   useEffect(() => {
     setIsMounted(true);
   }, []);
@@ -102,8 +102,8 @@ const Carousel: React.FC = () => {
     slidesToScroll: 1,
     swipeToSlide: true,
     focusOnSelect: true,
-    prevArrow: <FaArrowLeftLong className="icon" />,
-    nextArrow: <FaArrowRightLong className="icon" />,
+    prevArrow: <BsArrowLeft className="icon" />,
+    nextArrow: <BsArrowRight className="icon" />,
     responsive: [
       {
         breakpoint: 1024,
@@ -131,13 +131,13 @@ const Carousel: React.FC = () => {
 
   const cards = IMGS.map((el, index) => (
     <div key={el.id} className="slider__card">
-      <Link href={`/${el.link}`}>
+      <Link href={`/${locale}/${el.link}`}>
         <Image src={el.img} alt={el.title} priority />
+        <div className="text">
+          <h2>{t(`city.${index}.title`)}</h2>
+          <p>{t(`way.${index}.title`)}</p>
+        </div>
       </Link>
-      <div className="text">
-        <h2>{t(`city.${index}.title`)}</h2>
-        <p>{t(`way.${index}.title`)}</p>
-      </div>
     </div>
   ));
 
@@ -146,11 +146,13 @@ const Carousel: React.FC = () => {
   }
 
   return (
-    <section id="tur" className="container carousel">
-      <h1>{t("turlar")}</h1>
-      <Slider ref={sliderRef} {...settings}>
-        {cards}
-      </Slider>
+    <section className="bg">
+      <div id="tur" className="container carousel">
+        <h1>{t("turlar")}</h1>
+        <Slider ref={sliderRef} {...settings}>
+          {cards}
+        </Slider>
+      </div>
     </section>
   );
 };

@@ -12,19 +12,15 @@ const AntaliyaHeader: React.FC = () => {
           <Image src={antaliya} alt="antaliya" priority />
         </div>
         <div className="header__text">
-          <h2>{t("title21")}</h2>
-          <p>{t("title22")}</p>
+          <h2>{t("title22")}</h2>
+          <p>{t("title23")}</p>
         </div>
       </section>
       <section className=" container antaliya__cards">
         <div className="card">
-          <h3>{t("title23")}</h3>
-          <h2>{t("title24")}</h2>
+          <h3>{t("title24")}</h3>
+          <h2>{t("title25")}</h2>
           <ul>
-            <li>
-              <Image src={check} alt="check" priority />
-              {t("title25")}
-            </li>
             <li>
               <Image src={check} alt="check" priority />
               {t("title26")}
@@ -39,16 +35,6 @@ const AntaliyaHeader: React.FC = () => {
             </li>
             <li>
               <Image src={check} alt="check" priority />
-              {t("title29")}{" "}
-            </li>
-          </ul>
-        </div>
-        <div className="card">
-          <h3>{t("title6")}</h3>
-          <h2>{t("title13")}</h2>
-          <ul>
-            <li>
-              <Image src={check} alt="check" priority />
               {t("title29")}
             </li>
             <li>
@@ -57,19 +43,37 @@ const AntaliyaHeader: React.FC = () => {
             </li>
             <li>
               <Image src={check} alt="check" priority />
-              {t("title31")}
+              {t("title31")}{" "}
             </li>
+          </ul>
+        </div>
+        <div className="card">
+          <h3>{t("title24")}</h3>
+          <h2>{t("title31")}</h2>
+          <ul>
             <li>
               <Image src={check} alt="check" priority />
               {t("title32")}
             </li>
             <li>
               <Image src={check} alt="check" priority />
-              {t("title19")}
+              {t("title33")}
             </li>
             <li>
               <Image src={check} alt="check" priority />
-              {t("title20")}
+              {t("title34")}
+            </li>
+            <li>
+              <Image src={check} alt="check" priority />
+              {t("title35")}
+            </li>
+            <li>
+              <Image src={check} alt="check" priority />
+              {t("title36")}
+            </li>
+            <li>
+              <Image src={check} alt="check" priority />
+              {t("title37")}
             </li>
           </ul>
         </div>

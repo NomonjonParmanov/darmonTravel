@@ -1,12 +1,16 @@
-.navbar {
-  padding-top: 10px !important;
+.n__bg {
+  background-color: white;
   position: sticky;
   top: 0;
+  z-index: 100;
+}
+
+.navbar {
   display: flex;
   align-items: center;
-  background-color: white;
   justify-content: space-between;
-  z-index: 102;
+  padding-top: 10px !important;
+
   .logo {
     img {
       width: 168px;
@@ -25,7 +29,17 @@
       cursor: pointer;
     }
   }
-
+  .btns {
+    display: flex;
+    align-items: center;
+  }
+  span {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 21.25px;
+    color: #004290;
+    margin-top: -1px;
+  }
   .dropbtn {
     color: white;
     padding: 16px;
@@ -119,6 +133,7 @@
       font-size: 30px;
       font-weight: 400;
       line-height: 38px;
+      padding: 20px;
     }
   }
 }

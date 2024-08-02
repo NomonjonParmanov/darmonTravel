@@ -14,6 +14,7 @@
       font-weight: 700;
       line-height: 34.34px;
       color: #004290;
+      padding-bottom: 5px;
     }
     p {
       font-size: 23px;
@@ -42,7 +43,16 @@
     }
   }
 }
-
+@media (max-width: 704px) {
+  .tailand__header {
+    .header__text {
+      p {
+        font-size: 16px;
+        text-align: start;
+      }
+    }
+  }
+}
 .tailand__dastur {
   display: grid;
   align-items: center;

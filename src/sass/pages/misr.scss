@@ -43,7 +43,13 @@
     }
   }
 }
-
+@media (max-width: 700px) {
+  .misr__header {
+    p {
+      font-size: 16px;
+    }
+  }
+}
 .misr__dastur {
   display: flex;
   justify-content: center;

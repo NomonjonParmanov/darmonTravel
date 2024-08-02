@@ -9,9 +9,9 @@ const About = () => {
       <h1>{t("title")}</h1>
       <div className="about__content">
         <div className="about__text">
-          <p>{t("title2")}</p>
-          <p>{t("title3")}</p>
-          <p>{t("title4")}</p>
+          <p className="p1">{t("title2")}</p>
+          <p className="p2">{t("title3")}</p>
+          <p className="p3">{t("title4")}</p>
         </div>
         <div className="about__image">
           <Image src={about} alt="about" priority />

@@ -6,12 +6,12 @@ import Image from "next/image";
 import yevropa from "@/images/yevropa.png";
 const Yevropa: React.FC = () => {
   return (
-    <>
+    <div className="container">
       <Image className="yevropaI" src={yevropa} alt="yevropa" priority />
       <YevropaHeader />
       <YevropaDastur />
       <Button />
-    </>
+    </div>
   );
 };
 

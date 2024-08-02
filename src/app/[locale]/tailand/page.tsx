@@ -6,12 +6,12 @@ import tailand from "@/images/tailand.png";
 import Image from "next/image";
 const Tailand: React.FC = () => {
   return (
-    <>
+    <div className="container">
       <Image className="tailand" src={tailand} alt="tailand" priority />
       <TailandHeader />
       <TailandDastur />
       <Button />
-    </>
+    </div>
   );
 };
 

@@ -1,8 +1,8 @@
-import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/navbar/Navbar";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 export default async function LocaleLayout({
   children,
   params: { locale },
@@ -17,7 +17,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <Navbar />
           {children}
-          <Footer />
+          <ToastContainer />
         </NextIntlClientProvider>
       </body>
     </html>

@@ -6,57 +6,63 @@ import Image from "next/image";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import ru from "@/images/ru.png";
 import uz from "@/images/uz.png";
-import { useTranslations } from "next-intl";
-import { useRouter } from "next/navigation";
+import { useLocale, useTranslations } from "next-intl";
+import { usePathname, useRouter } from "next/navigation";
 import eng from "@/images/eng.svg";
 import Link from "next/link";
-
 const Navbar: React.FC = () => {
   const [toggle, setToggle] = useState(false);
   const t = useTranslations("Navbar");
   const router = useRouter();
-
+  const pathname = usePathname();
+  const parts = pathname.split("/");
+  const city = parts[2];
+  console.log(city);
   const changeLocale = (newLocale: string) => {
-    router.push(`/${newLocale}`);
+    router.push(`/${city ? `${newLocale}/${city}` : newLocale}`);
   };
 
+  const localeLang = useLocale();
   return (
-    <>
+    <div className="n__bg">
       <nav className="container navbar">
-        <Link href="/" className="logo">
+        <Link href={`/${localeLang}`} className="logo">
           <Image src={logo} alt="logo" priority />
         </Link>
         <ul>
-          <Link href={"/#tur"}>
+          <Link href={`/${localeLang}#tur`}>
             <li>{t("title1")}</li>
           </Link>
-          <Link href={"/#about"}>
+          <Link href={`/${localeLang}#about`}>
             <li>{t("title2")}</li>
           </Link>
-          <Link href={"/#service"}>
+          <Link href={`/${localeLang}#service`}>
             <li>{t("title3")}</li>
           </Link>
-          <Link href={"/#contact"}>
+          <Link href={`/${localeLang}#contact`}>
             <li>{t("title4")}</li>
           </Link>
         </ul>
         <div className="lang__media">
           <div className="lang dropdown">
-            <button className="dropbtn">
-              <MdLanguage className="icon" />
-            </button>
+            <div className="btns">
+              <span>{localeLang.toUpperCase()}</span>
+              <button className="dropbtn">
+                <MdLanguage className="icon" />
+              </button>
+            </div>
             <div className="dropdown-content">
               <button onClick={() => changeLocale("uz")}>
-                Uzb
+                Uz
                 <Image src={uz} alt="uz" priority />
               </button>
               <button onClick={() => changeLocale("ru")}>
                 Ru
                 <Image src={ru} alt="ru" priority />
               </button>
-              <button onClick={() => changeLocale("eng")}>
-                Eng
-                <Image src={eng} alt="eng" priority />
+              <button onClick={() => changeLocale("en")}>
+                En
+                <Image src={eng} alt="en" priority />
               </button>
             </div>
           </div>
@@ -67,21 +73,21 @@ const Navbar: React.FC = () => {
       </nav>
       <div className={`${toggle ? "show" : "none"}`}>
         <ul>
-          <Link href={"/#tur"}>
-            <li onClick={() => setToggle(!toggle)}>{t("title1")}</li>
+          <Link href={`/${localeLang}#tur`}>
+            <li>{t("title1")}</li>
           </Link>
-          <Link href={"/#about"}>
-            <li onClick={() => setToggle(!toggle)}>{t("title2")}</li>
+          <Link href={`/${localeLang}#about`}>
+            <li>{t("title2")}</li>
           </Link>
-          <Link href={"/#service"}>
-            <li onClick={() => setToggle(!toggle)}>{t("title3")}</li>
+          <Link href={`/${localeLang}#service`}>
+            <li>{t("title3")}</li>
           </Link>
-          <Link href={"/#contact"}>
-            <li onClick={() => setToggle(!toggle)}>{t("title4")}</li>
+          <Link href={`/${localeLang}#contact`}>
+            <li>{t("title4")}</li>
           </Link>
         </ul>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -1,13 +1,14 @@
 .sale {
-  margin-top: 100px !important;
   border-radius: 25px;
   width: 1400px;
   background: rgb(0, 66, 144);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 180px;
+  height: 210px;
+
   .sale__text {
+    padding-left: 35px;
     h2 {
       font-size: 25px;
       font-weight: 500;
@@ -37,6 +38,7 @@
   .sale__image {
     display: flex;
     align-items: center;
+    padding-right: 100px;
     .ticket {
       margin-right: -100px;
     }

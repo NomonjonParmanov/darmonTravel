@@ -3,7 +3,6 @@ import About from "@/components/about/About";
 import Carousel from "@/components/carousel/Carousel";
 import Footer from "@/components/footer/Footer";
 import Hero from "@/components/hero/Hero";
-import Navbar from "@/components/navbar/Navbar";
 import Sale from "@/components/sale/Sale";
 import Services from "@/components/services/Services";
 export default function HomePage() {
@@ -15,6 +14,7 @@ export default function HomePage() {
       <Sale />
       <About />
       <Services />
+      <Footer />
     </div>
   );
 }
